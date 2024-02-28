@@ -108,10 +108,12 @@ body {
 /* Make arrows larger on smaller screens */
 @media (max-width: 768px) {
   .carousel {
+    position: absolute;
     width: 100%;
   }
   .carousel-control-prev,
   .carousel-control-next {
+    position: absolute;
     width: 10%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -122,6 +124,7 @@ body {
 @media (max-width: 576px) {
   .carousel-control-prev,
   .carousel-control-next {
+    position: absolute;
     display: block;
     visibility: visible;
     top: 50%;
