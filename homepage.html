@@ -115,11 +115,20 @@ body {
     width: 10%;
   }
 }
-
 /* Adjust for iPhone */
-@media (max-width: 576px) {
+@media (max-width: 1179px) {
+  .carousel-item {
+    max-height: 50px;
+    display: block;
+    visibility: visible;
+    opacity: 0.5; /* Add this line */
+  }
+}
+/* Adjust for iPhone */
+@media (max-width: 1179px) {
   .carousel-control-prev,
   .carousel-control-next {
+    max-height: 50px;
     display: block;
     visibility: visible;
     opacity: 0.5; /* Add this line */
