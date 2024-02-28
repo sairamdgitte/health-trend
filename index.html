@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-68HLQ5604S"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-68HLQ5604S');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beautiful Carousel Website</title>
@@ -16,8 +27,10 @@
     /* Center carousel */
     .carousel {
       margin: 0 auto;
-      width: 80%; /* Adjust width as needed */
-      margin-top: 50px; /* Adjust margin-top to center vertically */
+      width: 80%;
+      /* Adjust width as needed */
+      margin-top: 50px;
+      /* Adjust margin-top to center vertically */
       perspective: 1000px;
     }
 
@@ -25,7 +38,8 @@
       display: flex;
       flex-wrap: nowrap;
       overflow: hidden;
-      transition: transform 0.5s ease; /* Smooth transition */
+      transition: transform 0.5s ease;
+      /* Smooth transition */
     }
 
     .carousel-item {
@@ -33,7 +47,8 @@
       position: relative;
       opacity: 0;
       visibility: hidden;
-      background-color: inherit; /* Match background color of body */
+      background-color: inherit;
+      /* Match background color of body */
     }
 
     .carousel-item.active {
@@ -42,10 +57,13 @@
     }
 
     .carousel-item img {
-      max-width: 100%; /* Ensure images don't exceed their original size */
+      max-width: 100%;
+      /* Ensure images don't exceed their original size */
       height: auto;
-      width: 100%; /* Make images fill their container */
-      cursor: pointer; /* Add pointer cursor for clickable images */
+      width: 100%;
+      /* Make images fill their container */
+      cursor: pointer;
+      /* Add pointer cursor for clickable images */
     }
 
     /* Carousel arrows */
@@ -56,7 +74,8 @@
       opacity: 0.5;
       text-align: center;
       background: none;
-      z-index: 2; /* Ensure arrows are above the carousel items */
+      z-index: 2;
+      /* Ensure arrows are above the carousel items */
     }
 
     .carousel-control-prev:hover,
@@ -82,6 +101,7 @@
 
     /* Make arrows larger on smaller screens */
     @media (max-width: 768px) {
+
       .carousel-control-prev,
       .carousel-control-next {
         width: 50%;
@@ -89,6 +109,7 @@
     }
   </style>
 </head>
+
 <body>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -140,4 +161,5 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
