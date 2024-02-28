@@ -110,28 +110,34 @@ body {
   .carousel {
     width: 100%;
   }
-  .carousel-control-prev,
+  /* .carousel-control-prev,
   .carousel-control-next {
     width: 10%;
-  }
+  } */
 }
+
 /* Adjust for iPhone */
-@media (max-width: 1179px) {
-  .carousel-item {
-    max-height: 50px;
-    display: block;
-    visibility: visible;
-    opacity: 0.5; /* Add this line */
-  }
-}
-/* Adjust for iPhone */
-@media (max-width: 1179px) {
-  .carousel-control-prev,
+@media (max-width: 576px) {
+  
   .carousel-control-next {
-    max-height: 50px;
-    display: block;
+    
+    /* display: block; */
     visibility: visible;
     opacity: 0.5; /* Add this line */
+    transform: translate(-600%,-72.5%);
+  }
+
+  .carousel-control-prev {
+    /* display: block; */
+    visibility: visible;
+    opacity: 0.5; /* Add this line */
+    transform: translate(600%,-72.5%);
+  }
+  .carousel-caption {
+    transform: translateY(-600%);
+  }
+  .carousel-indicators {
+    transform: translateY(-2000%);
   }
 }
 
@@ -141,7 +147,7 @@ body {
 </head>
 
 <body>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel-slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
