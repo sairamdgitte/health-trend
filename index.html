@@ -14,7 +14,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beautiful Carousel Website</title>
+  <title>Health Trend Report</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <style>
@@ -48,6 +48,7 @@
       opacity: 0;
       visibility: hidden;
       background-color: inherit;
+      height: 800px;
       /* Match background color of body */
     }
 
@@ -116,69 +117,73 @@
 
 <body>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <!-- Add more indicators as needed -->
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <a href="ai.html">
-          <img src="./images/AI_ML.jpg" class="d-block" alt="Image 1">
-        </a>
-        <div class="carousel-caption">
-          <h5>Artificial Intelligence</h5>
-          <!-- <p>Add your text here</p> -->
-        </div>
-      </div>
-      <div class="carousel-item">
-        <a href="ar_vr.html">
-          <img src="./images/AR_VR.png" class="d-block" alt="Image 2">
-        </a>
-        <div class="carousel-caption">
-          <h5>Augmented & Virtual Reality</h5>
-          <!-- <p>Add your text here</p> -->
-        </div>
-      </div>
-      <div class="carousel-item">
-        <a href="remote_care.html">
-          <img src="./images/remote_care.JPG" class="d-block" alt="Image 3">
-        </a>
-        <div class="carousel-caption">
-          <h5>Remote Care</h5>
-          <!-- <p>Add your text here</p> -->
-        </div>
-      </div>
-      <!-- Add more carousel items as needed -->
-      <div class="carousel-item">
-        <a href="wearables.html">
-          <img src="./images/wearables.jpg" class="d-block" alt="Image 4">
-        </a>
-        <div class="carousel-caption">
-          <h5>Wearables</h5>
-          <!-- <p>Add your text here</p> -->
-        </div>
-      </div>
-      <!-- Add more carousel items as needed -->
-      <div class="carousel-item">
-        <a href="genomics.html">
-          <img src="./images/genomics.jpg" class="d-block" alt="Image 4">
-        </a>
-        <div class="carousel-caption">
-          <h5>Genomics</h5>
-          <!-- <p>Add your text here</p> -->
-        </div>
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <!-- Add more indicators as needed -->
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="ai.html">
+        <img src="./images/AI_ML.jpg" class="d-block" alt="Image 1">
+      </a>
+      <div class="carousel-caption">
+        <h5>Artificial Intelligence</h5>
+        <!-- <p>Add your text here</p> -->
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    <div class="carousel-item">
+      <a href="ar_vr.html">
+        <img src="./images/AR_VR.png" class="d-block" alt="Image 2">
+      </a>
+      <div class="carousel-caption">
+        <h5>Augmented & Virtual Reality</h5>
+        <!-- <p>Add your text here</p> -->
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="remote_care.html">
+        <img src="./images/remote_care.JPG" class="d-block" alt="Image 3">
+      </a>
+      <div class="carousel-caption">
+        <h5>Remote Care</h5>
+        <!-- <p>Add your text here</p> -->
+      </div>
+    </div>
+    <!-- Add more carousel items as needed -->
+    <div class="carousel-item">
+      <a href="wearables.html">
+        <img src="./images/wearables.jpg" class="d-block" alt="Image 4">
+      </a>
+      <div class="carousel-caption">
+        <h5>Wearables</h5>
+        <!-- <p>Add your text here</p> -->
+      </div>
+    </div>
+    <!-- Add more carousel items as needed -->
+    <div class="carousel-item">
+      <a href="genomics.html">
+        <img src="./images/genomics.jpg" class="d-block" alt="Image 5">
+      </a>
+      <div class="carousel-caption">
+        <h5>Genomics</h5>
+        <!-- <p>Add your text here</p> -->
+      </div>
+    </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
