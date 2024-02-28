@@ -19,114 +19,117 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     /* Set background color to black */
-    body {
-      background-color: #000;
-      color: #fff;
-      overflow: hidden;
-    }
+body {
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
 
-    /* Center carousel */
-    .carousel {
-      margin: 0 auto;
-      width: 80%;
-      /* Adjust width as needed */
-      margin-top: 50px;
-      /* Adjust margin-top to center vertically */
-      perspective: 1000px;
-    }
+/* Center carousel */
+.carousel {
+  margin: 0 auto;
+  width: 80%;
+  /* Adjust width as needed */
+  margin-top: 50px;
+  /* Adjust margin-top to center vertically */
+  perspective: 1000px;
+}
 
-    .carousel-inner {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow: hidden;
-      transition: transform 0.5s ease;
-      /* Smooth transition */
-    }
+.carousel-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  /* Smooth transition */
+}
 
-    .carousel-item {
-      transform-style: preserve-3d;
-      position: relative;
-      opacity: 0;
-      visibility: hidden;
-      background-color: inherit;
-      height: 800px;
-      /* Match background color of body */
-    }
+.carousel-item {
+  transform-style: preserve-3d;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  background-color: inherit;
+  height: 800px;
+  /* Match background color of body */
+}
 
-    .carousel-item.active {
-      opacity: 1;
-      visibility: visible;
-    }
+.carousel-item.active {
+  opacity: 1;
+  visibility: visible;
+}
 
-    .carousel-item img {
-      max-width: 100%;
-      /* Ensure images don't exceed their original size */
-      height: auto;
-      width: 100%;
-      /* Make images fill their container */
-      cursor: pointer;
-      /* Add pointer cursor for clickable images */
-    }
+.carousel-item img {
+  max-width: 100%;
+  /* Ensure images don't exceed their original size */
+  height: auto;
+  width: 100%;
+  /* Make images fill their container */
+  cursor: pointer;
+  /* Add pointer cursor for clickable images */
+}
 
-    /* Carousel arrows */
-    .carousel-control-prev,
-    .carousel-control-next {
-      width: 5%;
-      color: #fff;
-      opacity: 0.5;
-      text-align: center;
-      background: none;
-      z-index: 2;
-      /* Ensure arrows are above the carousel items */
-    }
+/* Carousel arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  color: #fff;
+  opacity: 0.5;
+  text-align: center;
+  background: none;
+  z-index: 2;
+  /* Ensure arrows are above the carousel items */
+}
 
-    .carousel-control-prev:hover,
-    .carousel-control-next:hover {
-      opacity: 0.9;
-      text-decoration: none;
-      transition: opacity 0.3s ease;
-    }
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.9;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
 
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      background-color: transparent;
-    }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent;
+}
 
-    /* Adjust arrows position */
-    .carousel-control-prev {
-      left: -50px;
-    }
+/* Adjust arrows position */
+.carousel-control-prev {
+  left: -50px;
+}
 
-    .carousel-control-next {
-      right: -50px;
-    }
+.carousel-control-next {
+  right: -50px;
+}
 
-    /* Make arrows larger on smaller screens */
-    @media (max-width: 768px) {
+/* Make arrows larger on smaller screens */
+@media (max-width: 768px) {
+  .carousel {
+    width: 100%;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+}
 
-      .carousel {
-        width: 100%;
-      }
+/* Adjust for iPhone */
+@media (max-width: 576px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: block;
+    visibility: visible;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
 
-      .carousel-control-prev,
-      .carousel-control-next {
-        width: 10%;
-        /* height: 10px; */
-      }
-    }
-
-    /* Adjust for iPhone */
-    @media (max-width: 576px) {
-      .carousel-control-prev,
-      .carousel-control-next {
-        display: block;
-        visibility: visible;
-        /* height: 10px; */
-      }
-      .carousel-caption {
-        height: 10px
-      }
-    }
   </style>
 </head>
 
