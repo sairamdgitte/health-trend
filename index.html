@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Carousel Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Set background color to black */
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Center carousel */
+    .carousel {
+      margin: 0 auto;
+      width: 80%; /* Adjust width as needed */
+      margin-top: 50px; /* Adjust margin-top to center vertically */
+      perspective: 1000px;
+    }
+
+    .carousel-inner {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      transition: transform 0.5s ease; /* Smooth transition */
+    }
+
+    .carousel-item {
+      transform-style: preserve-3d;
+      position: relative;
+      opacity: 0;
+      visibility: hidden;
+      background-color: inherit; /* Match background color of body */
+    }
+
+    .carousel-item.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .carousel-item img {
+      max-width: 100%; /* Ensure images don't exceed their original size */
+      height: auto;
+      width: 100%; /* Make images fill their container */
+      cursor: pointer; /* Add pointer cursor for clickable images */
+    }
+
+    /* Carousel arrows */
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+      color: #fff;
+      opacity: 0.5;
+      text-align: center;
+      background: none;
+      z-index: 2; /* Ensure arrows are above the carousel items */
+    }
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      opacity: 0.9;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: transparent;
+    }
+
+    /* Adjust arrows position */
+    .carousel-control-prev {
+      left: -50px;
+    }
+
+    .carousel-control-next {
+      right: -50px;
+    }
+
+    /* Make arrows larger on smaller screens */
+    @media (max-width: 768px) {
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <!-- Add more indicators as needed -->
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="ai.html">
+          <img src="./images/AI_ML.jpg" class="d-block" alt="Image 1">
+        </a>
+        <div class="carousel-caption">
+          <h5>Beautiful Carousel</h5>
+          <p>Add your text here</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="ar_vr.html">
+          <img src="./images/AR_VR.png" class="d-block" alt="Image 2">
+        </a>
+        <div class="carousel-caption">
+          <h5>Beautiful Carousel</h5>
+          <p>Add your text here</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="wearables.html">
+          <img src="./images/wearables.jpg" class="d-block" alt="Image 3">
+        </a>
+        <div class="carousel-caption">
+          <h5>Beautiful Carousel</h5>
+          <p>Add your text here</p>
+        </div>
+      </div>
+      <!-- Add more carousel items as needed -->
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
