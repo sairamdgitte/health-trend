@@ -41,6 +41,7 @@ body {
   overflow: hidden;
   transition: transform 0.5s ease;
   /* Smooth transition */
+  position: relative; /* Add this line */
 }
 
 .carousel-item {
@@ -78,6 +79,9 @@ body {
   background: none;
   z-index: 2;
   /* Ensure arrows are above the carousel items */
+  position: absolute; /* Add this line */
+  top: 50%; /* Add this line */
+  transform: translateY(-50%); /* Add this line */
 }
 
 .carousel-control-prev:hover,
@@ -109,9 +113,6 @@ body {
   .carousel-control-prev,
   .carousel-control-next {
     width: 10%;
-    opacity: 0.9;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
   }
 }
 
@@ -119,22 +120,11 @@ body {
 @media (max-width: 576px) {
   .carousel-control-prev,
   .carousel-control-next {
-    opacity: 0.9;
-    text-decoration: none;
-    transition: opacity 0.3s ease;
     display: block;
     visibility: visible;
   }
-  .carousel-caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
-  }
 }
+
 
   </style>
 </head>
